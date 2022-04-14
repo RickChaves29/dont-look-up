@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "tb_articles" ALTER COLUMN "publishedAt" SET DEFAULT CURRENT_TIMESTAMP;
