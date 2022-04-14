@@ -1,0 +1,24 @@
+{
+  "name": "web-scraping",
+  "version": "1.0.0",
+  "description": "Script para coleta de dados para a api Dont-Look-Up",
+  "main": "main.js",
+  "scripts": {
+    "start": "ts-node src/main.ts"
+  },
+  "keywords": [
+    "Script",
+    "web-scraping"
+  ],
+  "author": "Henrique Chaves",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.26.1",
+    "prisma": "^3.12.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.12.0"
+  }
+}
