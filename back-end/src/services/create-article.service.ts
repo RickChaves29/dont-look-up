@@ -8,7 +8,7 @@ export class CreateArticleService {
 
   async create(data: CreateArticleDTO) {
     const { title, url, imageUrl, newsSite, summary } = data;
-    const article = await this.repository.article.create({
+    await this.repository.article.create({
       data: {
         title,
         url,
@@ -18,6 +18,6 @@ export class CreateArticleService {
       },
     });
 
-    return article;
+    return;
   }
 }
