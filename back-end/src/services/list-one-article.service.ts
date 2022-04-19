@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { ArticlesRepository } from 'src/repositories/articles.repository';
 
 @Injectable()
@@ -11,7 +11,12 @@ export class ListOneArticleService {
         id,
       },
     });
-
+    if (!article) {
+      throw new HttpException(
+        `Article ID ${id} not found`,
+        HttpStatus.NOT_FOUND,
+      );
+    }
     return article;
   }
 }

@@ -2,7 +2,7 @@ import { Body, Controller, Param, Patch } from '@nestjs/common';
 import { UpdateArticleDTO } from 'src/dto/update-article.dto';
 import { UpdateArticleService } from 'src/services/update-article.service';
 
-@Controller('articles')
+@Controller('api/v1/articles')
 export class UpdateAriticleController {
   constructor(private service: UpdateArticleService) {}
   @Patch(':id')

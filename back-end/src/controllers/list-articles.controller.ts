@@ -1,7 +1,7 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { ListArticlesService } from 'src/services/list-articles.service';
 
-@Controller('articles')
+@Controller('api/v1/articles')
 export class ListArticlesController {
   constructor(private service: ListArticlesService) {}
   @Get()

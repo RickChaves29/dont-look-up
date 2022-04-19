@@ -2,7 +2,7 @@ import { Body, Controller, Post } from '@nestjs/common';
 import { CreateArticleDTO } from 'src/dto/create-article.dto';
 import { CreateArticleService } from 'src/services/create-article.service';
 
-@Controller('articles')
+@Controller('api/v1/articles')
 export class CreateAriticleController {
   constructor(private service: CreateArticleService) {}
   @Post()

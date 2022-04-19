@@ -1,6 +1,6 @@
 import { Controller, Delete, Param } from '@nestjs/common';
 import { DeleteArticleService } from 'src/services/delete-article.service';
-@Controller('articles')
+@Controller('api/v1/articles')
 export class DeleteArticleController {
   constructor(private service: DeleteArticleService) {}
   @Delete(':id')
